@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('background_img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cv-wrapper {
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 1;
+    margin: auto; 
+}
+
+.cv-content {
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 2; 
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav .navigation.items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav .navigation.items li {
+    margin: 0 15px;
+}
+
+.column {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.avatar_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+}
+
+.column_main_header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-me,
+.contacts,
+.skills,
+.projects,
+.education,
+.languages {
+    margin-bottom: 30px;
+}
+
+.about-me h2,
+.contacts h2,
+.skills h2,
+.projects h2,
+.education h2,
+.languages h2 {
+    color: rgb(191, 109, 152);
+    text-align: center;
+}
+
+.about-me p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.skills_wrapper,
+.entities,
+.lang {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills_wrapper li,
+.entities li,
+.lang li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+}
+
+.footer_block {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer p {
+    display: inline-block;
+    margin: 0;
+}
+
+.footer_block img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+  
