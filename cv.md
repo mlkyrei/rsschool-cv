@@ -23,7 +23,8 @@ My goal is to combine my expertise in manual testing with automated solutions to
 * Procreate Dreams
 
 ## Code Snippet
-```function minSum(arr) {
+```javascript
+function minSum(arr) {
   let sorted = arr.sort((a, b) => a - b);
 
 let results = [];
@@ -33,7 +34,6 @@ for (let i = 0; i < sorted.length / 2; i++) {
 }
 let result = results.reduce((sum, current) => sum + current, 0)
 return result; 
-
 }
 ```
 
