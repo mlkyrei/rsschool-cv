@@ -34,7 +34,6 @@
     <body>
     <div class="section">   
     <div class="skills">
-    <section class="skills">
         <h2 id="skills">Skills</h2>
         <div>
         <h3>Relevant Technical Skills</h3>
@@ -57,14 +56,13 @@
         </div>
     </section>
  <div class="code">
-        <section class="code">
         <h2 id="code">Code Snippet</h2>
         <code>
             function minSum(arr) {
   let sorted = arr.sort((a, b) => a - b);
 
 let results = [];
-for (let i = 0; i < sorted.length / 2; i++) {
+for (let i = 0; i &lt sorted.length / 2; i++) {
     let product = sorted[i] * sorted[sorted.length - 1 - i];
     results.push(product);}
 let result = results.reduce((sum, current) => sum + current, 0)
@@ -72,7 +70,6 @@ return result;
 }
         </code>
     <img class='flower' src="graphics/flower.svg" alt="nav_icon" height="120">
-    </section>
     </div>
     <div class="ed">
     <section>
@@ -97,7 +94,6 @@ return result;
 </div>
    </div>
    <div class="job">
-        <section>
         <h2 id="job">Job Experience</h2>
         <h3>Software Testing Engineer | Apr 2025-Present</h3>
 <p>EPAM Solutions</p> 
@@ -110,7 +106,6 @@ return result;
 <p>Bayer KAZ LLP</p>
 <h3>PA/PR and Travel Coordinator | Deс 2020- Nov 2021</h3>
 <p>AstraZeneca Kazakhstan LLP</p>
-       </section>
        </div>
        <div class="lang">
         <section>
@@ -132,6 +127,5 @@ return result;
          <li>Email: malika_bukenova@epam.com</li>
         </ul>
    <a href="https://rs.school/courses/javascript-ru"><img src="graphics/rs-school-logo.svg" alt="courses_logo" height="40"></a>
-
 </footer>
 </html>
