@@ -3,40 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CV</title>
 </head>
 <header>
 <nav>
-    <img src="graphics/flower.png" alt="nav_icon">
+    <img class='flower' src="graphics/flower.svg" alt="nav_icon" height="40">
     <ul>
-       <li>About me</li>
-       <li>Skills</li>
-       <li>Code Snippet</li>
-       <li>Job experience</li>
-       <li>Education</li>
-       <li>Languages</li> 
+       <li> <a href="#about">About me</a></li>
+       <li><a href="#skills">Skills</a></li>
+       <li><a href="#code">Code Snippet</a></li>
+       <li><a href="#job">Job experience</a></li>
+       <li><a href="#ed">Education</a></li>
+       <li><a href="#lang">Languages</a></li> 
     </ul>
 </nav>        
-    <section class="About">
-        <div>
+    <section class="About" id="about">
+        <div class="pic_name">
+        <img src="graphics/profile_pic.jpg" height="300" alt="profile_pic">
+        <div class="profile">
         <h1>Malika Bukenova</h1>
         <p class="title">Software Testing Engineer</p>
-        <img src="graphics/profile_pic.jpg" height="400" alt="profile_pic">
+        <h2>About</h2>        
+        <p class="desc">I am a dedicated Software Testing Engineer with a passion for ensuring quality and performance in applications. Currently, I am expanding my skill set by learning JavaScript to transition into automation testing. My goal is to combine my expertise in manual testing with automated solutions to enhance efficiency and deliver scalable, high-quality software.</p>
+
         </div>
-        <div>
-        <h2>About</h2>
-        <p>I am a dedicated Software Testing Engineer with a passion for ensuring quality and performance in applications. Currently, I am expanding my skill set by learning JavaScript to transition into automation testing. My goal is to combine my expertise in manual testing with automated solutions to enhance efficiency and deliver scalable, high-quality software.</p>
-        <ul class="Contacts">
-            <li>Phone: +7 777 171 72 27</li>
-            <li>Address: Kunayev street 163, Almaty, Kazakhstan</li>
-            <li>Email: malika_bukenova@epam.com</li>
-        </ul>
         </div>
     </section>
     </header>
     <body>
-    <section>
-        <h2>Skills</h2>
+    <div class="section">   
+    <div class="skills">
+    <section class="skills">
+        <h2 id="skills">Skills</h2>
         <div>
         <h3>Relevant Technical Skills</h3>
         <ul>
@@ -57,8 +56,9 @@
         </ul>
         </div>
     </section>
-        <section>
-        <h2>Code Snippet</h2>
+ <div class="code">
+        <section class="code">
+        <h2 id="code">Code Snippet</h2>
         <code>
             function minSum(arr) {
   let sorted = arr.sort((a, b) => a - b);
@@ -66,15 +66,39 @@
 let results = [];
 for (let i = 0; i < sorted.length / 2; i++) {
     let product = sorted[i] * sorted[sorted.length - 1 - i];
-    results.push(product);
-}
+    results.push(product);}
 let result = results.reduce((sum, current) => sum + current, 0)
 return result; 
 }
         </code>
+    <img class='flower' src="graphics/flower.svg" alt="nav_icon" height="120">
     </section>
+    </div>
+    <div class="ed">
+    <section>
+        <h2 id="ed">Education</h2>
+        <h3>KIMEP University | 2016-2020</h3>
+          <p>Bachelor of Marketing Communications</p>
+          <ul>
+         <li>GPA: 4.28/4.33</li>
+         <li>SUMMA CUM LAUDE</li>
+         <li>Deans scholarship</li>
+         <li>Presidential scholarship</li>
+         <li>Presidential stipend</li>
+          </ul>
+<h3>University of Lille | 2019</h3>
+          <p>BUSINESS ADMINISTRATION LILLE, FRANCE</p>
+          <ul>
+          <li>GPA: 16.23/20</li>
+          <li>Erasmus+ scholarship</li>
+          </ul>
+    </section>
+    </div>
+</div>
+   </div>
+   <div class="job">
         <section>
-        <h2>Job Experience</h2>
+        <h2 id="job">Job Experience</h2>
         <h3>Software Testing Engineer | Apr 2025-Present</h3>
 <p>EPAM Solutions</p> 
 <p>Designed and executed detailed test cases to validate software functionality based on requirements and user stories. Performed manual, regression, and exploratory testing to identify defects and ensure quality. Identified, tracked, and documented bugs using tools like Jira. Tested REST APIs and validated endpoints using Postman. Prepared test data and configured test environments to support testing processes.</p>
@@ -87,26 +111,10 @@ return result;
 <h3>PA/PR and Travel Coordinator | Deс 2020- Nov 2021</h3>
 <p>AstraZeneca Kazakhstan LLP</p>
        </section>
+       </div>
+       <div class="lang">
         <section>
-        <h2>Education</h2>
-        <h3>KIMEP University | 2016-2020</h3>
-          <p>Bachelor of Marketing Communications</p>
-          <ul>
-         <li>GPA: 4.28/4.33</li>
-         <li>SUMMA CUM LAUDE</li>
-         <li>Dean’s scholarship</li>
-         <li>Presidential scholarship</li>
-         <li>Presidential stipend</li>
-          </ul>
-<h3>University of Lille | 2019</h3>
-          <p>BUSINESS ADMINISTRATION LILLE, FRANCE</p>
-          <ul>
-          <li>GPA: 16.23/20</li>
-          <li>Erasmus+ scholarship</li>
-          </ul>
-    </section>
-        <section>
-        <h2>Languages</h2>
+        <h2 id="lang">Languages</h2>
         <ul>
             <li>English - C1
             <li>Japanese - B1</li>
@@ -115,10 +123,15 @@ return result;
             <li>Kazakh - B2</li>
         </ul>
     </section>
+    </div>
 </body>
 <footer>
-<div>
+    <ul class="Contacts">
+         <li>Phone: +7 777 171 72 27</li>
+         <li>Address: Kunayev street 163, Almaty, Kazakhstan</li>
+         <li>Email: malika_bukenova@epam.com</li>
+        </ul>
    <a href="https://rs.school/courses/javascript-ru"><img src="graphics/rs-school-logo.svg" alt="courses_logo" height="40"></a>
-</div>
+
 </footer>
 </html>
