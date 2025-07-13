@@ -54,7 +54,6 @@
             <li>Procreate Dreams</li>
         </ul>
         </div>
-    </section>
  <div class="code">
         <h2 id="code">Code Snippet</h2>
         <code>
@@ -62,7 +61,7 @@
   let sorted = arr.sort((a, b) => a - b);
 
 let results = [];
-for (let i = 0; i &lt sorted.length / 2; i++) {
+for (let i = 0; i &lt; sorted.length / 2; i++) {
     let product = sorted[i] * sorted[sorted.length - 1 - i];
     results.push(product);}
 let result = results.reduce((sum, current) => sum + current, 0)
@@ -92,7 +91,6 @@ return result;
     </section>
     </div>
 </div>
-   </div>
    <div class="job">
         <h2 id="job">Job Experience</h2>
         <h3>Software Testing Engineer | Apr 2025-Present</h3>
@@ -119,8 +117,7 @@ return result;
         </ul>
     </section>
     </div>
-</body>
-<footer>
+    <footer>
     <ul class="Contacts">
          <li>Phone: +7 777 171 72 27</li>
          <li>Address: Kunayev street 163, Almaty, Kazakhstan</li>
@@ -128,4 +125,5 @@ return result;
         </ul>
    <a href="https://rs.school/courses/javascript-ru"><img src="graphics/rs-school-logo.svg" alt="courses_logo" height="40"></a>
 </footer>
+</body>
 </html>
