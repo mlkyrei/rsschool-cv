@@ -109,7 +109,8 @@ p.desc{
     color:#F9F1E4
 }
 
-body{
+body{display: flex;
+    flex-direction: column;
     margin:0;
 }
 
@@ -240,3 +241,5 @@ footer li{
     font-family: 'Lobster', sans-serif; 
     list-style: none;
 }
+
+footer a{text-decoration: underline;}
