@@ -3,6 +3,19 @@ html {
     line-height: 1.6;
     scroll-behavior: smooth;
 }
+@font-face {
+  font-family: 'Lobster';
+  src: url('Fonts/Lobster-Regular.ttf') format('.ttf');
+}
 
+header {background-color: #334B35;
+}
+header li {color:#F2EADF;
 
+}
+header h1{color: #F9F1E4;
+}
+p.title{color:#E5BB43;
+    font-family: 'Lobster', sans-serif;
 
+}
